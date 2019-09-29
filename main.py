@@ -61,6 +61,7 @@ def init():
     global DISTANCE, PHEROMONE, ANTS
 
     for i in range(MAX_CITIES):
+        DISTANCE.append([0.] * MAX_CITIES)
         PHEROMONE.append([INIT_PHEROMONE] * MAX_CITIES)
 
     # получаем расстояния
